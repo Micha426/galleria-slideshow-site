@@ -1,3 +1,10 @@
 // import base partials
-@import "base/_colors";
-@import "base/_typograpy";
+@import "base/colors";
+@import "base/typograpy";
+
+// import component partials
+@import "components/gallery-item";
+
+// import layout partials
+@import "layout/header";
+@import "layout/main";

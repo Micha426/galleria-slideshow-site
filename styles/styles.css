@@ -7,6 +7,12 @@ body {
   position: relative;
   margin: 0 0 24px 0;
 }
+@media (min-width: 768px) {
+  .gallery-item {
+    width: 21%;
+    margin: 0 0 10px 0;
+  }
+}
 .gallery-item::before {
   content: "";
   position: absolute;
@@ -54,6 +60,11 @@ header {
 header .site-logo svg {
   width: 115px;
   height: auto;
+}
+@media (min-width: 768px) {
+  header .site-logo svg {
+    width: 170px;
+  }
 }
 header a {
   text-decoration: none;

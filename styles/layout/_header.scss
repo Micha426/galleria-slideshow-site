@@ -12,6 +12,9 @@ header {
     svg {
       width: 115px;
       height: auto;
+      @media (min-width: 768px) {
+        width: 170px;
+      }
     }
 
   }

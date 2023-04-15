@@ -9,7 +9,7 @@ body {
 }
 @media (min-width: 768px) {
   .gallery-item {
-    width: 22.6%;
+    width: 22.8%;
     margin: 0 0 40px 0;
   }
 }
@@ -31,9 +31,9 @@ body {
 }
 .gallery-item .gallery-item-info {
   position: absolute;
-  bottom: 30px;
-  left: 30px;
-  right: 30px;
+  bottom: 32px;
+  left: 32px;
+  right: 32px;
   color: #FFF;
 }
 .gallery-item .gallery-item-info .gallery-item-title {
@@ -84,7 +84,7 @@ header a {
   text-decoration: none;
   color: #7D7D7D;
   text-transform: uppercase;
-  font-size: 0.64rem;
+  font-size: 0.75rem;
   font-weight: bold;
 }
 

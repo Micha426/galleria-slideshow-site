@@ -115,7 +115,6 @@ header a:hover {
 
 main {
   margin: 0 24px;
-  background: pink;
 }
 @media (min-width: 768px) {
   main {

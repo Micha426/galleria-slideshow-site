@@ -1,8 +1,15 @@
 // main styles
 main {
   margin: 0 24px;
+  background: pink;
+  @media (min-width: 768px) {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+  @media (min-width: 992px) {
+    max-width: 992px;
+  }
   @media (min-width: 1400px) {
     max-width: 1360px;
-    margin: 0 auto;
   }
 }

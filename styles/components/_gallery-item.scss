@@ -3,8 +3,14 @@
   position: relative;
   margin: 0 0 24px 0;
   @media (min-width: 768px) {
-    width: 22.8%;
+    width: 47.3%;
     margin: 0 0 40px 0;
+  }
+  @media (min-width: 992px) {
+    width: 30.6%;
+  }
+  @media (min-width: 1400px) {
+    width: 22.8%;
   }
 
   &::before {

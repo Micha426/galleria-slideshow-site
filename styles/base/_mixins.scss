@@ -1,0 +1,31 @@
+// Transition mixin. e.g.: @include transition(all .2s ease-out);
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// Box shadow mixin.
+@mixin box-shadow($top: 1.6px, $left: 2.7px, $blur: 2.7px, $color: rgba(0, 0, 0, 0.18)) {
+  -webkit-box-shadow: $top $left $blur $color;
+  -moz-box-shadow: $top $left $blur $color;
+  box-shadow: $top $left $blur $color;
+}
+
+// Pulse on hover animation
+@mixin pulse-on-hover {
+
+  @keyframes pulse-hover-reverse {
+    0% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes pulse-hover {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4); }
+    100% { transform: scale(1.2); }
+  }
+  
+}

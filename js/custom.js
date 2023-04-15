@@ -7,7 +7,7 @@
 var $grid = document.querySelector('.gallery-grid');
     var msnry = new Masonry($grid, {
         itemSelector: '.gallery-item',
-        gutter: 10,
+        gutter: 40,
         percentPosition: true
     });
     var $images = $grid.querySelectorAll('.gallery-item img');

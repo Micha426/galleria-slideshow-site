@@ -23,6 +23,11 @@ body {
     width: 22.8%;
   }
 }
+@media (hover: hover) and (pointer: fine) {
+  .gallery-item {
+    cursor: pointer;
+  }
+}
 .gallery-item::before {
   content: "";
   position: absolute;
@@ -33,6 +38,11 @@ body {
   background: rgb(255, 255, 255);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 66%);
   opacity: 0.4;
+  transition: all 0.2s ease-out;
+}
+.gallery-item:hover::before {
+  background: linear-gradient(180deg, rgb(255, 255, 255) 65%, rgb(0, 0, 0) 100%);
+  transition: all 0.6s ease-out;
 }
 .gallery-item img {
   width: 100%;

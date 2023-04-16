@@ -2,14 +2,14 @@
 .gallery-item {
   position: relative;
   margin: 0 0 24px 0;
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     width: 47.3%;
     margin: 0 0 40px 0;
   }
-  @media (min-width: 992px) {
+  @media (min-width: $dekstop) {
     width: 30.6%;
   }
-  @media (min-width: 1400px) {
+  @media (min-width: $dekstop-xl) {
     width: 22.8%;
   }
   @media (hover: hover) and (pointer: fine) {

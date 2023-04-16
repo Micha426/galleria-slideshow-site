@@ -1,14 +1,14 @@
 // main styles
 main {
   margin: 0 24px;
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     max-width: 740px;
     margin: 0 auto;
   }
-  @media (min-width: 992px) {
+  @media (min-width: $dekstop) {
     max-width: 992px;
   }
-  @media (min-width: 1400px) {
+  @media (min-width: $dekstop-xl) {
     max-width: 1360px;
   }
 }

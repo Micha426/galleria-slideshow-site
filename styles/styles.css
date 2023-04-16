@@ -96,8 +96,14 @@ body {
   position: absolute;
   top: 16px;
   left: 16px;
-  background-color: #000;
-  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.2s ease-out;
+}
+@media (hover: hover) and (pointer: fine) {
+  .detail-page .art-visual .art-visual-link:hover {
+    background-color: rgba(151, 151, 151, 0.7);
+    transition: all 0.2s ease-out;
+  }
 }
 .detail-page .art-visual .art-visual-link a {
   text-decoration: none;

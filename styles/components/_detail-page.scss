@@ -22,8 +22,15 @@
       position: absolute;
       top: 16px;
       left: 16px;
-      background-color: $black;
-      opacity: 0.8;
+      background-color:rgba(0, 0, 0, 0.7);
+      @include transition(all .2s ease-out);
+
+      &:hover {
+        @media (hover: hover) and (pointer: fine) {
+          background-color:rgba(151, 151, 151, 0.7);
+          @include transition(all .2s ease-out);
+        }
+      }
 
       a {
         text-decoration: none;

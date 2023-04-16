@@ -6,6 +6,7 @@ body {
 .gallery-item {
   position: relative;
   margin: 0 0 24px 0;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .gallery-item {

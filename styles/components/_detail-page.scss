@@ -1,8 +1,17 @@
 // detail page styles
 .detail-page {
+  position: relative;
+  @media (min-width: $dekstop-xl) {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto 0 auto;
+  }
 
   .art-visual {
     position: relative;
+    @media (min-width: $tablet) {
+      width: 475px;
+    }
 
     img {
       width: 100%;
@@ -38,6 +47,10 @@
     font-size: 24px;
     font-weight: bold;
     margin: 0 0 8px 8px;
+    @media (min-width: $tablet) {
+      font-size: 56px;
+      margin: 0 0 24px 0;
+    }
   }
 
   .detail-page-heading {
@@ -47,17 +60,51 @@
     width: 70%;
     position: relative;
     z-index: 1;
+    @media (min-width: $tablet) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 0;
+      padding: 0 65px 65px 65px;
+      width: 445px;
+    }
+    @media (min-width: $dekstop) {
+      width: 720px
+    }
+    @media (min-width: $dekstop-xl) {
+      width: 445px;
+      left: 410px;
+      right: auto;
+    }
 
     .subtitle {
       font-size: 15px;
       color: $boulder;
       margin: 0 0 0 8px;
+      @media (min-width: $tablet) {
+        margin: 0;
+      }
     }
 
     img {
       margin: 16px 0 0 0;
       width: 64px;
       height: auto;
+      @media (min-width: $tablet) {
+        width: 128px;
+        margin: 0;
+        position: absolute;
+        top: 227px;
+        right: 107px;
+      }
+      @media (min-width: $dekstop) {
+        right: 349px;
+      }
+      @media (min-width: $dekstop-xl) {
+        right: auto;
+        left: 95px;
+        top: 485px;
+      }
     }
 
   }
@@ -65,6 +112,13 @@
   article {
     position: relative;
     z-index: 2;
+    @media (min-width: $tablet) {
+      margin: 50px 0 0 0;
+    }
+    @media (min-width: $dekstop-xl) {
+      margin: 0;
+      width: 475px;
+    }
 
     h2 {
       font-size: 100px;
@@ -72,6 +126,14 @@
       font-weight: bold;
       text-align: right;
       margin: -50px 0 0 0;
+      @media (min-width: $tablet) {
+        font-size: 200px;
+        text-align: left;
+        margin: 0;
+      }
+      @media (min-width: $dekstop-xl) {
+        text-align: right;
+      }
     }
 
     p {
@@ -79,6 +141,14 @@
       font-weight: bold;
       color: $boulder;
       line-height: 2em;
+      @media (min-width: $tablet) {
+        margin: -115px 0 0 115px;
+        width: 475px;
+      }
+      @media (min-width: $dekstop-xl) {
+        margin: -80px 0 0 0;
+        width: 350px;
+      }
     }
 
     a {
@@ -88,6 +158,12 @@
       font-size: 12px;
       color: $boulder;
       display: block;
+      @media (min-width: $tablet) {
+        margin: 40px 0 53px 115px;
+      }
+      @media (min-width: $dekstop-xl) {
+        margin: 80px 0 0 0;
+      }
     }
 
   }

@@ -79,7 +79,7 @@
       width: 720px
     }
     @media (min-width: $dekstop-xl) {
-      width: 445px;
+      width: 449px;
       left: 410px;
       right: auto;
     }
@@ -176,7 +176,6 @@
       &:hover {
         @media (hover: hover) and (pointer: fine) {
           color: $black;
-          text-decoration: none;
           @include transition(all .2s ease-out);
         }       
       }

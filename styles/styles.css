@@ -153,7 +153,7 @@ body {
 }
 @media (min-width: 1400px) {
   .detail-page .detail-page-heading {
-    width: 445px;
+    width: 449px;
     left: 410px;
     right: auto;
   }
@@ -268,7 +268,6 @@ body {
 @media (hover: hover) and (pointer: fine) {
   .detail-page article a:hover {
     color: #000;
-    text-decoration: none;
     transition: all 0.2s ease-out;
   }
 }

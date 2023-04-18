@@ -1,9 +1,3 @@
-/*var msnry = new Masonry( '.gallery-grid', {
-    columnWidth: 200,
-    gutter: 10,
-    itemSelector: '.gallery-item'
-});*/
-
 var $grid = document.querySelector('.gallery-grid');
     var msnry = new Masonry($grid, {
         itemSelector: '.gallery-item',
@@ -11,12 +5,7 @@ var $grid = document.querySelector('.gallery-grid');
         percentPosition: true
     });
     var $images = $grid.querySelectorAll('.gallery-item img');
-    // $images.forEach(function (el) {
-    //     el.addEventListener('load', function () {
-    //         console.log("Image is loaded: " + el.getAttribute("src"));
-    //         msnry.layout();
-    //     });
-    // });
+    
 
     Promise.all(
         Array.from($images).filter(img => !img.complete)
@@ -31,3 +20,13 @@ var $grid = document.querySelector('.gallery-grid');
             msnry.layout();
         }
 );
+
+const lightboxLink = document.querySelector(".lightbox-link");
+const lightboxComponent = document.querySelector(".lightbox");
+
+console.log(lightboxLink);
+
+lightboxLink.addEventListener("click", function(e) {
+    preventDefault();
+    lightboxComponent.classList.toggle("active");
+});

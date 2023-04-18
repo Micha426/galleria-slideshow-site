@@ -107,14 +107,14 @@
         margin: 0;
         position: absolute;
         bottom: -193px;
-        right: 32px;
+        right: 42px;
       }
       @media (min-width: $dekstop) {
-        right: 284px;
+        right: 294px;
       }
       @media (min-width: $dekstop-xl) {
         right: auto;
-        left: 95px;
+        left: 30px;
         top: 485px;
       }
     }
@@ -191,6 +191,45 @@
 
     }
 
+  }
+
+}
+
+// lightbox
+.lightbox {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+
+  .lightbox-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    text-align: right;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+  &.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 }

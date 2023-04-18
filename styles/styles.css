@@ -77,6 +77,7 @@ body {
   .detail-page {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     margin: 100px auto 0 auto;
   }
 }
@@ -98,6 +99,12 @@ body {
   left: 16px;
   background-color: rgba(0, 0, 0, 0.7);
   transition: all 0.2s ease-out;
+}
+@media (min-width: 768px) {
+  .detail-page .art-visual .art-visual-link {
+    top: auto;
+    bottom: 16px;
+  }
 }
 @media (hover: hover) and (pointer: fine) {
   .detail-page .art-visual .art-visual-link:hover {
@@ -178,13 +185,13 @@ body {
     width: 128px;
     margin: 0;
     position: absolute;
-    top: 227px;
-    right: 107px;
+    bottom: -193px;
+    right: 32px;
   }
 }
 @media (min-width: 992px) {
   .detail-page .detail-page-heading img {
-    right: 349px;
+    right: 284px;
   }
 }
 @media (min-width: 1400px) {
@@ -193,6 +200,9 @@ body {
     left: 95px;
     top: 485px;
   }
+}
+.detail-page .detail-page-heading-inner {
+  position: relative;
 }
 .detail-page article {
   position: relative;

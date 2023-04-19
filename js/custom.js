@@ -20,13 +20,3 @@ var $grid = document.querySelector('.gallery-grid');
             msnry.layout();
         }
 );
-
-const lightboxLink = document.querySelector(".lightbox-link");
-const lightboxComponent = document.querySelector(".lightbox");
-
-console.log(lightboxLink);
-
-lightboxLink.addEventListener("click", function(e) {
-    preventDefault();
-    lightboxComponent.classList.toggle("active");
-});

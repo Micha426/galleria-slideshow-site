@@ -236,6 +236,7 @@ body {
 @media (min-width: 1400px) {
   .detail-page article h2 {
     text-align: right;
+    line-height: 0.85em;
   }
 }
 .detail-page article p {
@@ -252,7 +253,7 @@ body {
 }
 @media (min-width: 1400px) {
   .detail-page article p {
-    margin: -80px 0 0 0;
+    margin: -40px 0 0 0;
     width: 350px;
   }
 }

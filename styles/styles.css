@@ -391,6 +391,11 @@ body {
 }
 .slideshow-nav .slideshow-nav-links a {
   text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+.slideshow-nav .slideshow-nav-links a:hover path {
+  fill: #7D7D7D;
+  transition: all 0.2s ease-out;
 }
 .slideshow-nav .slideshow-nav-links a:first-child {
   margin: 0 23px 0 0;

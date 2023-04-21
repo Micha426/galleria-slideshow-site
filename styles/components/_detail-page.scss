@@ -303,6 +303,16 @@
 
     a {
       text-decoration: none;
+      @include transition(all .2s ease-out);
+
+      &:hover {
+
+        path {
+          fill: $boulder;
+          @include transition(all .2s ease-out);
+        }
+
+      }
 
       &:first-child {
         margin: 0 23px 0 0;

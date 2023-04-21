@@ -69,6 +69,15 @@ body {
   font-size: 0.92rem;
   color: #c3c3c2;
 }
+.gallery-item a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  text-indent: -9999px;
+}
 
 .detail-page {
   position: relative;
@@ -296,6 +305,7 @@ body {
 .lightbox .lightbox-inner {
   display: flex;
   flex-direction: column;
+  margin: 0 24px;
 }
 .lightbox a {
   text-align: right;
@@ -313,6 +323,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.lightbox img {
+  width: 100%;
+  height: auto;
 }
 
 header {

@@ -338,6 +338,11 @@ body {
   width: 100%;
   z-index: 99;
 }
+@media (min-width: 768px) {
+  .slideshow-nav {
+    padding: 24px;
+  }
+}
 .slideshow-nav .slideshow-nav-inner {
   display: flex;
   align-items: center;
@@ -371,8 +376,18 @@ body {
 .slideshow-nav .slideshow-info h3 {
   margin: 0 0 8px 0;
 }
+@media (min-width: 768px) {
+  .slideshow-nav .slideshow-info h3 {
+    font-size: 18px;
+  }
+}
 .slideshow-nav .slideshow-info span {
   font-size: 12px;
+}
+@media (min-width: 768px) {
+  .slideshow-nav .slideshow-info span {
+    font-size: 13px;
+  }
 }
 .slideshow-nav .slideshow-nav-links a {
   text-decoration: none;

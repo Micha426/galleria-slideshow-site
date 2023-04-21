@@ -251,6 +251,10 @@
   width: 100%;
   z-index: 99;
 
+  @media (min-width: $tablet) {
+    padding: 24px;
+  }
+
   .slideshow-nav-inner {
     display: flex;
     align-items: center;
@@ -281,10 +285,16 @@
 
     h3 {
       margin: 0 0 8px 0;
+      @media (min-width: $tablet) {
+        font-size: 18px;
+      }
     }
 
     span {
       font-size: 12px;
+      @media (min-width: $tablet) {
+        font-size: 13px;
+      }
     }
 
   }

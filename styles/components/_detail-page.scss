@@ -1,6 +1,7 @@
 // detail page styles
 .detail-page {
   position: relative;
+  padding: 0 0 75px 0;
   @media (min-width: $dekstop-xl) {
     display: flex;
     justify-content: space-between;
@@ -237,6 +238,68 @@
   img {
     width: 100%;
     height: auto;
+  }
+
+}
+
+// slideshow nav
+.slideshow-nav {
+  position: fixed;
+  bottom: 0;
+  padding: 16px 24px;
+  background-color: $white;
+  width: 100%;
+  z-index: 99;
+
+  .slideshow-nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (min-width: $tablet) {
+      max-width: 740px;
+      margin: 0 auto;
+    }
+    @media (min-width: $dekstop) {
+      max-width: 992px;
+    }
+    @media (min-width: $dekstop-xl) {
+      max-width: 1360px;
+    }
+  }
+
+  &::before {
+    content: '';
+    height: 1px;
+    background-color: $mercury;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .slideshow-info {
+
+    h3 {
+      margin: 0 0 8px 0;
+    }
+
+    span {
+      font-size: 12px;
+    }
+
+  }
+
+  .slideshow-nav-links {
+
+    a {
+      text-decoration: none;
+
+      &:first-child {
+        margin: 0 23px 0 0;
+      }
+
+    }
+
   }
 
 }

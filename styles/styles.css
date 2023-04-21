@@ -81,6 +81,7 @@ body {
 
 .detail-page {
   position: relative;
+  padding: 0 0 75px 0;
 }
 @media (min-width: 1400px) {
   .detail-page {
@@ -327,6 +328,57 @@ body {
 .lightbox img {
   width: 100%;
   height: auto;
+}
+
+.slideshow-nav {
+  position: fixed;
+  bottom: 0;
+  padding: 16px 24px;
+  background-color: #FFF;
+  width: 100%;
+  z-index: 99;
+}
+.slideshow-nav .slideshow-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .slideshow-nav .slideshow-nav-inner {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  .slideshow-nav .slideshow-nav-inner {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1400px) {
+  .slideshow-nav .slideshow-nav-inner {
+    max-width: 1360px;
+  }
+}
+.slideshow-nav::before {
+  content: "";
+  height: 1px;
+  background-color: #E5E5E5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.slideshow-nav .slideshow-info h3 {
+  margin: 0 0 8px 0;
+}
+.slideshow-nav .slideshow-info span {
+  font-size: 12px;
+}
+.slideshow-nav .slideshow-nav-links a {
+  text-decoration: none;
+}
+.slideshow-nav .slideshow-nav-links a:first-child {
+  margin: 0 23px 0 0;
 }
 
 header {
